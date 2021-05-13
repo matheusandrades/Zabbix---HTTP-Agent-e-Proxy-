@@ -70,7 +70,7 @@
 #### > Clique em Create discovery rule
 #### > Insira os parâmetros no formulario
 
-![Discovery rule](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/discovery.jpg)
+![Discovery rule](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/discovery.png)
 
 ### Na imagem acima adicionamos uma descoberta via snmp dos numeros dos ASN, onde o resultado sera armazenado na vareavel {#ASNUM}.
 
@@ -80,7 +80,7 @@
 #### > Clique em Creat Item prototype
 #### > Insira os parâmetros do item no formulario
 
-![Item](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/item.jpg)
+![Item](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/item.png)
 
 ##### No campo URL, vamos inserir a API que iremos realizar a consulta em seguida da vamos adicionar ao final da url a vareavel {#ASNUM} que sera substituidas por todos ASN que existem no roteador de borda(BGP).
 ##### Em seguida voce ira preencher o endereço do HTTP proxy que tem a conexão com a internet que recebera a requisição do zabbix server.
@@ -88,12 +88,12 @@
 
 ##### Agora que temos nosso formulario preenchido vamos criar um Preprocessing JSONPath, onde iremos passar o parametro para coletar somente a tag "name" que se encontra dnetro do "data".
 
-![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/jsonpath.jpg)
+![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/jsonpath.jpg)
 
 ##### Para isso vamos adicionar $.data.["name"]   .. (Para saber mais sobre JSONPath acesse o link da documentação oficial do zabbix https://www.zabbix.com/documentation/4.0/manual/appendix/items/jsonpath ).
 ##### Agora ja podemos salvar nosso item prototype e realizar nossas coletas, depois disso iremos em Monitoring no canto esquerdo do navegador, e iremos conferir o resultado no Latest data...
 
-![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/resultado.jpg)
+![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/resultado.jpg)
 
 
 
