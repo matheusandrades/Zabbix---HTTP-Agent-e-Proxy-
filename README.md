@@ -70,7 +70,7 @@
 #### > Clique em Create discovery rule
 #### > Insira os parâmetros no formulario
 
-![Discovery rule](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/discovery.png)
+![Discovery rule](https://github.com/matheusandrades/Zabbix---HTTP-Agent-e-Proxy-/blob/main/discovery.jpg)
 
 ### Na imagem acima adicionamos uma descoberta via snmp dos numeros dos ASN, onde o resultado sera armazenado na vareavel {#ASNUM}.
 
