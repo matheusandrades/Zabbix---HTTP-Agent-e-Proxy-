@@ -84,6 +84,9 @@
 
 ##### No campo URL, vamos inserir a API que iremos realizar a consulta em seguida da vamos adicionar ao final da url a vareavel {#ASNUM} que sera substituidas por todos ASN que existem no roteador de borda(BGP).
 ##### Em seguida voce ira preencher o endereço do HTTP proxy que tem a conexão com a internet que recebera a requisição do zabbix server.
+
+![Item](https://github.com/matheusandrades/Zabbix---HTTP-Agent-e-Proxy-/blob/main/proxy.jpg)
+
 ##### Feito isso precisamos alterar o Type Information para Text pois os valores que estamos recebendo sao textos em JSON.
 
 ##### Agora que temos nosso formulario preenchido vamos criar um Preprocessing JSONPath, onde iremos passar o parametro para coletar somente a tag "name" que se encontra dnetro do "data".
