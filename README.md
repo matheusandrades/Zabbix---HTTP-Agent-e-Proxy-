@@ -1,7 +1,7 @@
 # Zabbix---HTTP-Agent-e-Proxy-
 
 ### Fala pessoal, tudo beleza? Hoje vamos falar de HTTP Agent e Proxy no zabbix.
-### Em grande empresas por questões de seguranças para evitar ataques DDOS entre outros motivos os servidores do Zabbix acabam sendo restritos a conexao com a internet, por conter ### varias informações de toda topologia de uma rede e tambem por ser um ferramenta essencial para ter um monitoramento de toda a rede.
+### Em grande empresas por questões de seguranças para evitar ataques DDOS entre outros motivos os servidores do Zabbix acabam sendo restritos a conexao com a internet, por conter varias informações de toda topologia de uma rede e tambem por ser um ferramenta essencial para ter um monitoramento de toda a rede.
 ### Quando você se depara com uma situação semelhante a essa e muitas das vezes precisa trabalhar para obter alguma informação atravez de API consultando na internet, como faria ?
 ### A função Type: HTTP Agent e HTTP Proxye, veio para resolver esse tipo de "problema". 
 ### Na verdade o type: HTTP Agent serve para você monitorar diversos cenarios via HTTP, mas vou citar um exemplo bem simples e auto-explicativa abaixo onde iremos fazer uma  consulta via API no Bgp View, trazendo informação do ASN que fecham peer com um roteador de borda (BGP).
