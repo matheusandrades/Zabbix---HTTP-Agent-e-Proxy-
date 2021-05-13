@@ -80,7 +80,7 @@
 #### > Clique em Creat Item prototype
 #### > Insira os parâmetros do item no formulario
 
-![Item](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/item.png)
+![Item](https://github.com/matheusandrades/Zabbix---HTTP-Agent-e-Proxy-/blob/main/item.jpg)
 
 ##### No campo URL, vamos inserir a API que iremos realizar a consulta em seguida da vamos adicionar ao final da url a vareavel {#ASNUM} que sera substituidas por todos ASN que existem no roteador de borda(BGP).
 ##### Em seguida voce ira preencher o endereço do HTTP proxy que tem a conexão com a internet que recebera a requisição do zabbix server.
@@ -88,12 +88,12 @@
 
 ##### Agora que temos nosso formulario preenchido vamos criar um Preprocessing JSONPath, onde iremos passar o parametro para coletar somente a tag "name" que se encontra dnetro do "data".
 
-![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/jsonpath.jpg)
+![JSONPath](https://github.com/matheusandrades/Zabbix---HTTP-Agent-e-Proxy-/blob/main/jsonpath.jpg)
 
 ##### Para isso vamos adicionar $.data.["name"]   .. (Para saber mais sobre JSONPath acesse o link da documentação oficial do zabbix https://www.zabbix.com/documentation/4.0/manual/appendix/items/jsonpath ).
 ##### Agora ja podemos salvar nosso item prototype e realizar nossas coletas, depois disso iremos em Monitoring no canto esquerdo do navegador, e iremos conferir o resultado no Latest data...
 
-![JSONPath](https://github.com/matheusandrades/Zabbix--HTTP-Agent-e-Proxy/main/blob/resultado.jpg)
+![JSONPath](https://github.com/matheusandrades/Zabbix---HTTP-Agent-e-Proxy-/blob/main/resultado.jpg)
 
 
 
